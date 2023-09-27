@@ -37,7 +37,7 @@
             placeholder="xxxxxxxxxxxxxxxx"
           />
         </div>
-        <div>
+        <div class="cvc-number">
           <label for="cvc">CVC #</label>
           <input
             id="cvc"
@@ -49,9 +49,11 @@
             placeholder="0000"
           />
         </div>
-        <div>
+        <div class="amount">
           <label for="amount">Amount</label>
-          $<input
+          <div class="amount-child">
+            <p>$</p>
+            <input
             id="amount"
             type="number"
             inputmode="numeric"
@@ -60,11 +62,12 @@
             maxlength="9"
             placeholder="amount"
           />
+          </div>
         </div>
       </fieldset>
       <section class="container">
         <fieldset class="left-side">
-          <div>
+          <div class="name">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" />
           </div>
@@ -91,12 +94,12 @@
           </div>
         </fieldset>
         <fieldset class="right-side">
-          <div>
-            <label for="first-name">First Name</label>
+          <div class="name">
+            <label for="first-name">Last Name</label>
             <input type="text" id="first-name" />
           </div>
           <fieldset class="state-information">
-            <div>
+            <div class="pick-state">
               <label for="state">State</label>
               <select name="state" id="state">
                 <option value="Texas" selected>Pick a state</option>
@@ -107,20 +110,20 @@
                 <option value="Ohio">Ohio</option>
               </select>
             </div>
-            <div>
+            <div class="postal-code">
               <label for="postal-code">Postal Code</label>
               <input type="text" id="postal-code" />
             </div>
           </fieldset>
-          <div>
+          <div class="message">
             <label for="textarea">Message</label>
             <textarea
               id="textarea"
               name="textarea"
-              rows="3"
+              rows="4"
               cols="30"
             ></textarea>
-            <p>Add any notes here.</p>
+            <p class="notes">Add any notes here.</p>
           </div>
         </fieldset>
       </section>

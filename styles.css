@@ -19,12 +19,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  margin-top: 30px;
+  margin-top: 50px;
+  border: #d8d8d8 1px solid;
 }
 
 .form .header {
   background-color: #f7f7f7;
-  border: rgba(121, 121, 121, 0.605) 1px solid;
+  border: #d8d8d8 1px solid;
   padding: 10px;
 }
 
@@ -43,6 +44,30 @@ body {
   margin: 10px;
   padding: 10px;
   border: none;
+  justify-content: space-between;
+}
+
+.card-information .card-number {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+}
+
+.card-information .cvc-number {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+}
+
+.card-information .amount {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+}
+
+.amount .amount-child {
+  display: flex;
+  gap: 5px;
 }
 
 .form .container {
@@ -87,11 +112,69 @@ input[type="number"] {
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  background-color: grey;
+  background-color: #6c757d;
   width: 60%;
   border-radius: 5px;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-/* missing the fieldset state information / to fix the text area part / to organize and personilize the buttons correctly */
+/* avance 2 */
+
+.right-side .state-information {
+  display: inline-flex;
+  border: none;
+  align-items: flex-end;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.state-information .pick-state {
+  display: grid;
+  width: 50%;
+  gap: 5px;
+}
+
+.state-information .postal-code {
+  display: grid;
+  gap: 5px;
+  width: 50%;
+}
+
+.right-side .message {
+  display: grid;
+}
+
+.message .notes {
+  font-size: xx-small;
+}
+
+.form .footer {
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: #f7f7f7;
+  border: #d8d8d8 1px solid;
+}
+
+.footer .cancel-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+  background-color: #6c757d;
+  color: #fefefe;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer .send-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #017bff;
+  color: #fefefe;
+  border: none;
+  border-radius: 3px;
+}
