@@ -29,7 +29,7 @@
           <label for="ccn">Card #</label>
           <input
             id="ccn"
-            type="tel"
+            type="number"
             inputmode="numeric"
             pattern="[0-9\s]{13,19}"
             autocomplete="cc-number"
@@ -41,7 +41,7 @@
           <label for="cvc">CVC #</label>
           <input
             id="cvc"
-            type="tel"
+            type="number"
             inputmode="numeric"
             pattern="[0-9\s]{3,4}"
             autocomplete="cvc-number"
@@ -54,14 +54,14 @@
           <div class="amount-child">
             <p>$</p>
             <input
-            id="amount"
-            type="number"
-            inputmode="numeric"
-            pattern="[0-9\s]{0,9}"
-            autocomplete="amount-number"
-            maxlength="9"
-            placeholder="amount"
-          />
+              id="amount"
+              type="number"
+              inputmode="numeric"
+              pattern="[0-9\s]{0,9}"
+              autocomplete="amount-number"
+              maxlength="9"
+              placeholder="amount"
+            />
           </div>
         </div>
       </fieldset>
@@ -78,15 +78,19 @@
           <div class="container-types">
             <label for="card-type">We accept</label>
             <div class="types">
+              <label for="mastercard"></label>
               <input type="radio" value="mastercard" name="card-type" /><i
                 class="fa-brands fa-cc-mastercard"
               ></i>
+              <label for="visa"></label>
               <input type="radio" value="visa" name="card-type" /><i
                 class="fa-brands fa-cc-visa"
               ></i>
+              <label for="dinners"></label>
               <input type="radio" value="dinners" name="card-type" /><i
                 class="fa-brands fa-cc-diners-club"
               ></i>
+              <label for="amex"></label>
               <input type="radio" value="amex" name="card-type" /><i
                 class="fa-brands fa-cc-amex"
               ></i>
@@ -95,8 +99,8 @@
         </fieldset>
         <fieldset class="right-side">
           <div class="name">
-            <label for="first-name">Last Name</label>
-            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
           </div>
           <fieldset class="state-information">
             <div class="pick-state">
@@ -134,3 +138,4 @@
     </fieldset>
   </body>
 </html>
+s
