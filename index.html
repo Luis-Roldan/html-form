@@ -69,38 +69,52 @@
         <fieldset class="left-side">
           <div class="name">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" placeholder="First Name" />
           </div>
           <div>
             <label for="city">City</label>
-            <input type="text" id="city" />
+            <input type="text" id="city" placeholder="City" />
           </div>
           <div class="container-types">
             <label for="card-type">We accept</label>
             <div class="types">
-              <label for="mastercard"></label>
-              <input type="radio" value="mastercard" name="card-type" /><i
-                class="fa-brands fa-cc-mastercard"
-              ></i>
-              <label for="visa"></label>
-              <input type="radio" value="visa" name="card-type" /><i
-                class="fa-brands fa-cc-visa"
-              ></i>
-              <label for="dinners"></label>
-              <input type="radio" value="dinners" name="card-type" /><i
-                class="fa-brands fa-cc-diners-club"
-              ></i>
-              <label for="amex"></label>
-              <input type="radio" value="amex" name="card-type" /><i
-                class="fa-brands fa-cc-amex"
-              ></i>
+              <div>
+                <label for="mastercard"></label>
+                <input
+                  type="radio"
+                  value="mastercard"
+                  name="card-type"
+                  id="mastercard"
+                /><i class="fa-brands fa-cc-mastercard"></i>
+              </div>
+              <div>
+                <label for="visa"></label>
+                <input type="radio" value="visa" name="card-type" id="visa" /><i
+                  class="fa-brands fa-cc-visa"
+                ></i>
+              </div>
+              <div>
+                <label for="dinners"></label>
+                <input
+                  type="radio"
+                  value="dinners"
+                  name="card-type"
+                  id="dinners"
+                /><i class="fa-brands fa-cc-diners-club"></i>
+              </div>
+              <div>
+                <label for="amex"></label>
+                <input type="radio" value="amex" name="card-type" id="amex" /><i
+                  class="fa-brands fa-cc-amex"
+                ></i>
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="right-side">
           <div class="name">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" placeholder="Last name" />
           </div>
           <fieldset class="state-information">
             <div class="pick-state">
@@ -116,7 +130,7 @@
             </div>
             <div class="postal-code">
               <label for="postal-code">Postal Code</label>
-              <input type="text" id="postal-code" />
+              <input type="text" id="postal-code" placeholder="Postal Code" />
             </div>
           </fieldset>
           <div class="message">
@@ -126,6 +140,7 @@
               name="textarea"
               rows="4"
               cols="30"
+              placeholder="Write a message"
             ></textarea>
             <p class="notes">Add any notes here.</p>
           </div>
