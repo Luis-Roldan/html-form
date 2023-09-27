@@ -3,12 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/88fa653541.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit:ital,wght@1,200&family=Lato:wght@300&family=Noto+Sans+Osmanya&family=Roboto:wght@300&family=Rubik:wght@300&family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Html Form</title>
   </head>
   <body>
-    
-
-
+    <fieldset class="form">
+      <div class="header">
+        <h1>Payment form example</h1>
+      </div>
+      <div>
+        <p class="alert">Some fields are missing</p>
+      </div>
+      <fieldset class="card-information">
+        <div class="card-number">
+          <label for="ccn">Card #</label>
+          <input
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number"
+            maxlength="19"
+            placeholder="xxxxxxxxxxxxxxxx"
+          />
+        </div>
+        <div>
+          <label for="cvc">CVC #</label>
+          <input
+            id="cvc"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{3,4}"
+            autocomplete="cvc-number"
+            maxlength="4"
+            placeholder="0000"
+          />
+        </div>
+        <div>
+          <label for="amount">Amount</label>
+          $<input
+            id="amount"
+            type="number"
+            inputmode="numeric"
+            pattern="[0-9\s]{0,9}"
+            autocomplete="amount-number"
+            maxlength="9"
+            placeholder="amount"
+          />
+        </div>
+      </fieldset>
+      <section class="container">
+        <fieldset class="left-side">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input type="text" id="city" />
+          </div>
+          <div class="container-types">
+            <label for="card-type">We accept</label>
+            <div class="types">
+              <input type="radio" value="mastercard" name="card-type" /><i
+                class="fa-brands fa-cc-mastercard"
+              ></i>
+              <input type="radio" value="visa" name="card-type" /><i
+                class="fa-brands fa-cc-visa"
+              ></i>
+              <input type="radio" value="dinners" name="card-type" /><i
+                class="fa-brands fa-cc-diners-club"
+              ></i>
+              <input type="radio" value="amex" name="card-type" /><i
+                class="fa-brands fa-cc-amex"
+              ></i>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="right-side">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </div>
+          <fieldset class="state-information">
+            <div>
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option value="Texas" selected>Pick a state</option>
+                <option value="california">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Ohio">Ohio</option>
+              </select>
+            </div>
+            <div>
+              <label for="postal-code">Postal Code</label>
+              <input type="text" id="postal-code" />
+            </div>
+          </fieldset>
+          <div>
+            <label for="textarea">Message</label>
+            <textarea
+              id="textarea"
+              name="textarea"
+              rows="3"
+              cols="30"
+            ></textarea>
+            <p>Add any notes here.</p>
+          </div>
+        </fieldset>
+      </section>
+      <fieldset class="footer">
+        <button type="button" class="cancel-button">Cancel</button>
+        <button type="button" class="send-button">Send</button>
+      </fieldset>
+    </fieldset>
   </body>
 </html>
